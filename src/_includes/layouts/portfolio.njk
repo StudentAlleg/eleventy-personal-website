@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# This is the template for individual portfolio pages builds the front matter properties into the page #}
+
+<div class="wrapper portfolio">
+  <div>
+    {# The post front matter includes the title property #}
+    {# On click navigate to the link #}
+    <a href={{link}}><h1 class='portfolioTitle'
+
+      >{{title}}</h1></a>
+      {#onclick="location.href='{{link}}'"#}
+    {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
+    
+    {# Content from the body of the post markdown appears here #}
+    {{ content | safe }}
+    <div class="controls">
+    {# The previous and next post data is added in .eleventy.js #}
+    {% if prevPost.url %}
+      <p>
+        <strong>Previous Project</strong>: 
+        <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+      </p>
+    {% endif %}
+    {% if nextPost.url %}
+      <p>
+        <strong>Next Project</strong>: 
+        <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      </p>
+    {% endif %}
+    </div>
+  </div>
+</div>

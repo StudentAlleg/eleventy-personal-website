@@ -1,0 +1,46 @@
+a:link {
+    color: goldenrod;
+}
+
+a:visited {
+    color: chocolate; 
+}
+
+a:hover {
+    color: darksalmon;
+}
+
+.portfolioTitle:hover {
+    color: darksalmon;
+    cursor: pointer;
+}
+
+body {
+    background-color:antiquewhite;
+    font: "Courier New";
+}
+.home {
+    justify-content: left;
+}
+
+.portfolio {
+    place-items: normal;
+}
+
+.portfolioTitle {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: goldenrod;
+}
+
+.content {
+    size: 24pt;
+}
+
+.previous {
+
+}
+
+.next {
+
+}
