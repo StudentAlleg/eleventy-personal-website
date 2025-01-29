@@ -1,6 +1,6 @@
 # eleventy personal site
 
-A template repo meant to help setting up new eleventy sites based on [my personal site](StudentAlleg.github.io) easy.
+A template repo meant to help setting up new eleventy sites based on [my personal site](https://StudentAlleg.github.io/) easy.
 
 # Pages
 
